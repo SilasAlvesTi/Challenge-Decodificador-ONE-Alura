@@ -1,13 +1,14 @@
-html {
-   background-color: #F3F5FC; 
+html{
+    background-color: #F3F5FC;
 }
 
-header img {
-    margin-top: 40px;
-    margin-left: 84px;
+#logo-alura img{
+    position: absolute;
+    left: 5%;
+    top: 5%;
 }
 
-#input-texto {
+#input-entrada input{
     position: absolute;
     width: 680px;
     height: 48px;
@@ -20,12 +21,53 @@ header img {
     font-size: 32px;
     line-height: 150%;
 
-    background-color: #F3F5FC;
+    /* identical to box height, or 48px */
+
+    /* Dark blue/dark-blue-300 */
     color: #0A3871;
+    background-color: #F3F5FC;
     border: 0;
 }
 
-#button-criptografar {
+#texto-explicativo {
+    position: absolute;
+    left: 240px;
+    top: 851px;
+}
+
+#texto-explicativo p {
+    width: 228px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#botoes {
+    margin-left: 240px;
+    margin-top: 885px;
+}
+
+#botoes li {
+    display: inline-block;
+}
+
+#botao-criptografar {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -45,7 +87,30 @@ header img {
     flex-grow: 0;
 }
 
-#button-descriptografar {
+#botoes #botao-criptografar .texto-botoes {
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#botao-descriptografar{
+    /* Button */
+
     box-sizing: border-box;
 
     /* Auto layout */
@@ -71,7 +136,28 @@ header img {
     flex-grow: 0;
 }
 
-#input-retangulo {
+#botoes #botao-descriptografar .texto-botoes {
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#retangulo {
     position: absolute;
     width: 400px;
     height: 944px;
@@ -87,10 +173,6 @@ header img {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     text-align: center;
-    color: #0A3871;
+    margin-top: 50px;
 }
