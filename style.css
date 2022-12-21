@@ -1,26 +1,41 @@
-html{
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-color: #F3F5FC;
 }
 
-#logo-alura img{
-    position: absolute;
-    left: 5%;
-    top: 5%;
+#logo-alura img {
+    padding-left: 7%;
+    padding-top: 3%;
 }
 
-#input-entrada input{
-    position: absolute;
-    width: 680px;
-    height: 48px;
-    left: 240px;
-    top: 168px;
+#main-esquerda {
+    float: left;
+    width: 65%;
+    padding-left: 15%;
+    margin-top: 5%;
+}
 
+#main-direita {
+    float: left;
+    width: 35%;
+    margin-top: -3%;
+}
+
+#input-entrada {
+    margin-top: 5%;
+}
+
+#input-entrada #input-texto {
+    width: 680px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-
+    resize: none;
     /* identical to box height, or 48px */
 
     /* Dark blue/dark-blue-300 */
@@ -29,11 +44,9 @@ html{
     border: 0;
 }
 
-#texto-explicativo {
-    position: absolute;
-    left: 240px;
-    top: 851px;
-}
+#texto-explicativo  {
+    margin-top: 15%;
+} 
 
 #texto-explicativo p {
     width: 228px;
@@ -53,42 +66,30 @@ html{
     opacity: 0.8;
 
     /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
+
+} 
 
 #botoes {
-    margin-left: 240px;
-    margin-top: 885px;
+    padding-top: 2%;
 }
 
 #botoes li {
     display: inline-block;
 }
 
-#botao-criptografar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    
+#botoes #botao-criptografar{
     width: 328px;
     height: 67px;
-    
+
     /* Dark blue/dark-blue-300 */
     background: #0A3871;
     border-radius: 24px;
-    
+
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 #botoes #botao-criptografar .texto-botoes {
-    width: 280px;
+    width: 100%;
     height: 19px;
 
     font-family: 'Inter';
@@ -100,44 +101,21 @@ html{
 
     /* White */
     color: #FFFFFF;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
-#botao-descriptografar{
-    /* Button */
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-
+#botoes #botao-descriptografar {
     width: 328px;
     height: 67px;
 
     /* Light gray */
     background: #D8DFE8;
-
     /* Dark blue/dark-blue-300 */
     border: 1px solid #0A3871;
     border-radius: 24px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 #botoes #botao-descriptografar .texto-botoes {
-    width: 280px;
+    width: 100%;
     height: 19px;
 
     font-family: 'Inter';
@@ -149,30 +127,12 @@ html{
 
     /* Dark blue/dark-blue-300 */
     color: #0A3871;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
-#retangulo {
-    position: absolute;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+footer p{
+    position: relative;
+    margin-left: 40%;
 
-    /* White */
-    background: #FFFFFF;
-
-    /* shadow */
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
+    color: #0A3871;
+    font-size: 25px;
 }
