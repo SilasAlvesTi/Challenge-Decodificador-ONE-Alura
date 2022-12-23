@@ -2,45 +2,42 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <title>Decodificador</title>
     </head>
     <body>
         <header>
-            <div id="logo-alura">
+            <div class="logo-alura">
                 <img src="img/logo.png" alt="Logo da Alura">
             </div>
         </header>
 
         <main>
-            <div id="main-esquerda">
-                <div id="input-entrada">
-                    <textarea id="input-texto" rows="7" cols="24" placeholder="Digite seu texto"></textarea>
+            <div class="esquerda">
+                <div class="input-area">
+                    <textarea class="input-texto" rows="7" cols="24" placeholder="Digite seu texto"></textarea>
                 </div>
-
-                <div id="texto-explicativo">
+                
+                <div class="texto-explicativo">
                     <p><img src="img/exclamacao.png" alt="Sinal de exclamação">Apenas letras minúsculas e sem acento.</p>
                 </div>
-
-                <div id="botoes">
+    
+                <div class="botoes">
                     <ul>
-                        <li><button id="botao-criptografar"><div class="texto-botoes">Criptografar</div></button></li>
-                        <li><button id="botao-descriptografar"><div class="texto-botoes">Descriptografar</div></button></li>
+                        <li><button class="botao-criptografar"><div class="texto-botoes">Criptografar</div></button></li>
+                        <li><button class="botao-descriptografar"><div class="texto-botoes">Descriptografar</div></button></li>
                     </ul>
                 </div>
             </div>
-            <div id="main-direita">
-                <div id="retangulo">
-                    <input type="image" src="img/Rectangle-1.png" placeholder="Resultado">
-                </div>
+
+            <div class="retangulo">
+                <div class="input-imagem"><input type="image" src="img/Rectangle-1.png" placeholder="Resultado"></div>
             </div>
-            
+               
         </main>
 
-        <footer>
-            <p>https://github.com/SilasAlvesTi</p>
-        </footer>
     </body>
     
 </html>
