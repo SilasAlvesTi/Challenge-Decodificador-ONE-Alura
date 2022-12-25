@@ -156,14 +156,37 @@ main {
 }
 
 .retangulo {
-    margin-top: -3em;    
-    align-items: center;
+    margin-top: -3em;
 }
 
 .retangulo-superior {
     margin-top: -49em;
     padding-left: 6.5em;
 }
+
+.output-area {
+    height: 100%;
+    margin-top: -38.5em;
+    visibility: hidden;
+}
+
+.output-texto {
+    width: 79%;
+    height: 70%;
+    margin-left: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    /* Gray/gray-400 */
+    color: #495057;
+    
+    resize: none;
+    border: 0;
+}
+
 
 footer {
     font-size: 20px;
