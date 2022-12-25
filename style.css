@@ -156,9 +156,14 @@ main {
 }
 
 .retangulo {
-    margin-top: -3em;
+    margin-top: -3em;    
+    align-items: center;
 }
 
+.retangulo-superior {
+    margin-top: -49em;
+    padding-left: 6.5em;
+}
 
 @media screen and (max-device-width: 414px) {
     .logo-alura {
