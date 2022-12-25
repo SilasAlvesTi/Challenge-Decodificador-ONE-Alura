@@ -165,6 +165,18 @@ main {
     padding-left: 6.5em;
 }
 
+footer {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media screen and (max-device-width: 414px) {
     .logo-alura {
         margin-top: 1em;
