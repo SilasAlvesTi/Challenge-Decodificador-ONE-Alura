@@ -3,12 +3,13 @@ const criptografar = document.querySelector('.botao-criptografar');
 const descriptografar = document.querySelector('.botao-descriptografar');
 const retanguloSuperior = document.querySelector('.retangulo-superior');
 const outputTexto = document.querySelector('.output-texto');
+const copiar = document.querySelector('.botao-copiar')
 
-function tornaOutputVisivel(textoCriptogradado) {
+function tornaOutputVisivel(texto) {
     const imagem = retanguloSuperior;
     const textArea = outputTexto;
 
-    textArea.value = textoCriptogradado;
+    textArea.value = texto;
     imagem.style.visibility = 'hidden';
     textArea.style.visibility = 'visible';
 }
@@ -27,6 +28,14 @@ function apenasLetrasMinusculas(texto) {
     return alfabeto.test(texto);
 }
 
+function mostraBotaoCopiar() {
+    copiar.style.visibility = 'visible';
+}
+
+function escondeBotaoCopiar() {
+    copiar.style.visibility = 'hidden';
+}
+
 criptografar.addEventListener('click', function() {
     const textoSemEspacos = texto.value.replaceAll(' ', '');
  
@@ -43,7 +52,8 @@ criptografar.addEventListener('click', function() {
         replaceAll('u', 'ufat');
 
     tornaOutputVisivel(textoCriptogradado);
-})
+    mostraBotaoCopiar();
+});
 
 descriptografar.addEventListener('click', function() {
     const textoSemEspacos = texto.value.replaceAll(' ', '');
@@ -53,12 +63,19 @@ descriptografar.addEventListener('click', function() {
         return
     }
 
-    texto.value = texto.value.
+    const textoDescriptogradado = texto.value.
         replaceAll('enter', 'e').
         replaceAll('imes', 'i').
         replaceAll('ai', 'a').
         replaceAll('ober', 'o').
         replaceAll('ufat', 'u');
 
+    tornaOutputVisivel(textoDescriptogradado);
+    mostraBotaoCopiar();
+});
+
+copiar.addEventListener('click', function() {
     tornaOutputOculto();
-})
+    escondeBotaoCopiar();
+    navigator.clipboard.writeText(outputTexto.value);
+});
