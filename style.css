@@ -313,6 +313,10 @@ footer a {
         width: 0%;
     }
 
+    .retangulo {
+        margin-top: 3em;
+    }
+
     .retangulo-inferior {
         width: 100%;
         margin-top: 3em;
@@ -322,7 +326,7 @@ footer a {
         content: url("img/retangulo-celular.png");
         width: 100%;
         padding-left: 0;
-        margin-top: 5em;
+        margin-top: 0;
         margin-bottom: 15em;
     }
 
